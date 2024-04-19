@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { DraftPatient, Patient } from "../types/Patient";
 import { v4 as uuidv4 } from "uuid";
-import { createJSONStorage, persist } from "zustand/middleware";
+import { persist } from "zustand/middleware";
 
 type PatientState = {
   patients: Patient[];
